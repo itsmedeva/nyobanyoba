@@ -588,6 +588,10 @@ footer .footer-location .location-icon{
         height: 250px;
     }
 
+    .hero-section .judul h1{
+        font-size: 10px;
+    }
+
     .elemen-gambar img{
         height: 250px;
         width: auto;
@@ -605,7 +609,7 @@ footer .footer-location .location-icon{
     
     .wrap-layanan .card {
         width: 80%;
-        height: 150px;
+        height: auto;
         position: relative;
         margin: 5%;
         display: flex;
@@ -686,7 +690,7 @@ footer .footer-location .location-icon{
     .wrap-konsultasi .card {
         display: flex;
         width: 80%;
-        height: 150px;
+        height: auto;
         margin: 10px 0 0 0;
     }
     
