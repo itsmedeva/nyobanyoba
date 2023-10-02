@@ -1,0 +1,742 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    height: 100px;
+    background-color: #f4f4f4;
+    background-size: cover;
+}
+
+
+/* header */
+header{
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+nav .logo a{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #de1b51;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;   
+}
+
+nav .links .current-page{
+    color:#de1b51;
+}
+
+a:hover{
+    color: #de1b51;
+}
+
+nav .links{
+    display: flex;
+    gap: 2rem;
+}
+
+nav .toggle_btn{
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* dropdown menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 0;
+    width: 80%;
+    background: rgba(255, 255, 255, 1);
+    /* backdrop-filter: blur(15px); */
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown_menu.open{
+    height: 100vh;
+    position: fixed;
+}
+
+.dropdown_menu li{
+    height: 10%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: #de1b51;
+    width: 100%;
+    height: 100vh;
+}
+
+.judul h1{
+    margin-top: 159px;
+    margin-left: 32px;
+    color: #ffffff;
+}
+
+.judul p{
+    margin-left: 32px;
+    color:#ffffff;
+    margin-top: 60px;
+}
+
+.elemen-gambar img{
+    height: 100%;
+    width: 850px;
+}
+
+.layanan{
+    margin:5%;
+    text-align: justify;
+}
+
+.layanan h1{
+    text-align: center;
+    margin-bottom: 66px;
+    font-size: 48px;
+}
+
+.wrap-layanan{
+    display:flex;
+    justify-content: space-around;
+}
+
+.wrap-layanan .card {
+    width: 300px;
+    height: 380px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: #ffffff;
+}
+
+.wrap-layanan .head-card img {
+    width: 100%;
+    height: 173px;
+    object-fit: cover;
+}
+
+.wrap-layanan .body-card {
+    padding: 10px 15px;
+}
+
+.wrap-layanan .body-card h1 {
+    margin: 0;  
+}
+
+.button-form{
+    display: flex;
+    justify-content: center;
+}
+
+#myBtn{
+    margin: 3% 10%;
+    padding: 1% 40%;
+    text-align: center;
+    background-color: #de1b51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.about{
+    background-image: url(../Asset/Beranda-tentang/Backgroundred.png);
+    color: #ffffff;
+    height: 100vh;
+}
+.about h1{
+    display: flex;
+    padding-top: 54px;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.wrap-about{
+    padding:54px 32px 140px 32px;
+    display: flex;
+}
+
+.wrap-about .perkenalan{
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+    background-color: #de1b51;
+    margin-right: 28px;
+    padding: 40px 113px 136px 24px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.wrap-about .visi-misi{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 36px 24px 36px;
+    background-color: #de1b51;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.konsultasi{
+    padding: 54px 44px 180px 44px;
+}
+.konsultasi h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 74px;
+    font-size: 48px;
+}
+.wrap-konsultasi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap-konsultasi .card {
+    width: 300px;
+    height: 380px;
+    margin: 10px 20px 0 0;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: #ffffff;
+}
+
+.wrap-konsultasi .head-card img {
+    width: 100%;
+    height: 173px;
+    object-fit: cover;
+}
+
+.wrap-konsultasi .body-card {
+    padding: 10px 15px;
+}
+
+.wrap-konsultasi .body-card h2{
+    margin: 0;  
+    text-align: center;
+    font-size: 20px;
+}
+
+.wrap-konsultasi .body-card h5{
+    color: #de1b51;
+    text-align: center;
+    font-size: 24px;
+}
+
+.wrap-konsultasi .body-card .deskripsiKonsultasi{
+    text-align: left;
+    font-size: 14px;
+}
+
+.testimoni{
+    background-image: url(../Asset/Beranda/Beranda\ Testimoni/Background-red.png);
+    width:100%;
+    height: 100vh;
+    padding: 5%;
+}
+
+.testimoni h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 48px;
+}
+
+.testimoni .wrap-testi{
+    display: flex;
+    white-space: initial;
+}
+.testimoni .card {
+    width: 220px;
+    height: 152px;
+    margin: 0 20px 0 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.testimoni .card .card-content{
+    padding: 10px 15px;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.feedback-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 15%;
+}
+
+.feedback-form h1{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 48px;
+}
+
+.wrap-feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.feedback-form .nama{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 24px;
+    line-height: 2em;
+    border-radius: 3px;
+    border: 1px solid #dbe4e4;
+    box-shadow: none;
+    outline: none;
+}
+
+.feedback-form .feedback{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px 10% 12px;
+    line-height: 2em;
+    border-radius: 3px;
+    border: 1px solid #dbe4e4;
+    box-shadow: none;
+    outline: none;
+}
+
+.submitfeedback{
+    margin-top: 1%;
+    padding: 10px;
+    width: 10%;
+    background-color: #de1b51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24;
+    font-weight: bold;
+    border-radius: 6px;
+}
+footer{
+    display: flex;
+    width:100%;
+    height: 295px;
+    background-color: #2e2e2e;
+    color:#ffffff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+footer .socmed .socmed-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-links li a{
+    color: #ffffff;
+}
+footer .footer-links li a:hover{
+    color: #de1b51;
+}
+
+footer .footer-location .location-icon{
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@keyframes animatetop {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.isian-form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.isian-form .isi{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    line-height: 2em;
+    border-radius: 3px;
+    border: 1px solid #dbe4e4;
+    box-shadow: none;
+    outline: none;
+}
+
+.button-submit-formulir{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-formulir{
+    padding: 10px;
+    width: 20%;
+    background-color: #de1b51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* responsive design */
+@media(max-width: 768px){
+    nav .links{
+        gap: 1rem;
+    }
+
+    .hero-section{
+        font-size: 12px;
+        height: 400px;
+    }
+
+    .elemen-gambar img{
+        height: 100%;
+        width: auto;
+    }
+
+    .judul h1{
+        margin: 60px 0 0 0;
+    }
+
+    .judul p{
+        margin: 0;
+    }
+
+    .wrap-layanan .card {
+        width: 200px;
+        height: 300px;
+        font-size: 12px;
+    }
+
+    .wrap-layanan .head-card img {
+        height: 120px;
+    }
+
+    .wrap-about .perkenalan{
+        width: 120%;
+        background-color: #de1b51;
+        margin-right: 28px;
+        font-size: 12px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    }
+    
+    .wrap-about .visi-misi{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        padding: 24px 36px 24px 36px;
+    }
+
+    .konsultasi{
+        padding: 54px 44px 180px 44px;
+    }
+    .konsultasi h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 74px;
+        font-size: 48px;
+    }
+    .wrap-konsultasi{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .wrap-konsultasi .card {
+        width: 400px;
+        height: 350px;
+    }
+    
+    .wrap-konsultasi .head-card img {
+        height: 120px;
+    }
+    
+    .wrap-konsultasi .body-card h2{
+        font-size: 14px;
+    }
+    
+    .wrap-konsultasi .body-card h5{
+        color: #de1b51;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .wrap-konsultasi .body-card .deskripsiKonsultasi{
+        font-size: 12px;
+    }
+
+    .testimoni{
+        height: 500px;
+    }
+
+    .submitfeedback{
+        width: 16%;
+    }
+
+    .modal {
+        padding-top: 10%;
+    }
+    
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media(max-width: 576px){
+    nav .links{
+        display: none;
+    }
+
+    nav .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    .hero-section{
+        font-size: 8px;
+        height: 250px;
+    }
+
+    .elemen-gambar img{
+        height: 250px;
+        width: auto;
+    }
+
+    .judul h1{
+        margin: 70px 0 10px 0;
+    }
+
+    .wrap-layanan{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrap-layanan .card {
+        width: 80%;
+        height: 150px;
+        position: relative;
+        margin: 5%;
+        display: flex;
+        box-shadow: 0 10px 10px rgba(0,0,0,.1);
+        background-color: #ffffff;
+    }
+    
+    .wrap-layanan .head-card img {
+        width: 173px;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .wrap-layanan .body-card {
+        padding: 10px 15px;
+    }
+    
+    .wrap-layanan .body-card h1 {
+        margin: 0;  
+    }
+
+    .about{
+        background-image: url(../Asset/Beranda-tentang/Backgroundred.png);
+        color: #ffffff;
+        height: 100vh;
+    }
+    .about h1{
+        display: flex;
+        padding-top: 54px;
+        justify-content: center;
+        font-size: 32px;
+    }
+    
+    .wrap-about{
+        padding:54px 32px 140px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrap-about .perkenalan{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-color: #de1b51;
+        margin-right: 0;
+        margin-bottom: 30%;
+        padding: 5%;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    }
+    
+    .wrap-about .visi-misi{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: #de1b51;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    }
+
+    .konsultasi{
+        padding: 3%;
+    }
+    .konsultasi h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 74px;
+        font-size: 48px;
+    }
+    .wrap-konsultasi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrap-konsultasi .card {
+        display: flex;
+        width: 80%;
+        height: 150px;
+        margin: 10px 0 0 0;
+    }
+    
+    .wrap-konsultasi .head-card img {
+        width: 173px;
+        height: 100%;
+    }
+
+    .feedback-form{
+        height: 400px;
+    }
+    
+    .feedback-form h1{
+        font-size: 32px;
+    }
+    
+    .feedback-form .feedback{
+        padding: 6px 12px 20% 12px;
+    }
+
+    .submitfeedback{
+        margin-top: 3%;
+        width: 30%;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 240px;
+    }
+
+    footer .footer-links{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .modal{
+        padding-top: 20%;
+    }
+
+    .modal-content h1{
+        font-size: 32px;
+    }
+}
+
+#preloader{
+    background: #ffffff url(../Asset/loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
